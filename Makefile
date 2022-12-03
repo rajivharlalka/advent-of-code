@@ -1,6 +1,6 @@
-PHONY: push
+.PHONY: push
 push:
-	ga .; \
-	gcsm 'New Codes Added'; \
+	git add --all; \
+	git commit -sm 'New Codes Added'; \
 	git push origin main; \
-	gst
+	git status;
